@@ -1,6 +1,20 @@
 function tampilMasukanJumlahPilihan() {
+  var nama = document.getElementById("dataInputNama").value;
+  //Eror traping Input nama
+  if (nama.trim() === "") {
+    alert("Masukkan nama Anda!");
+    return;
+  }
+
   var jumlah = parseInt(document.getElementById("dataInputJumlah").value);
   var tag = "";
+
+  // Eror Traping Input jumlah
+  if (isNaN(jumlah) || jumlah < 1) {
+    alert("Masukkan jumlah pilihan dengan angka positif dan tidak boleh 0!");
+    return;
+  }
+
   for (var i = 1; i <= jumlah; i++) {
     tag +=
       "Pilihan " + i + ' : <input type="text" id="inputPilihan' + i + '"> <br>';
@@ -40,11 +54,16 @@ function tampilkanDataTerpilih() {
       break;
     }
   }
-
-
     var nama = document.getElementById("dataInputNama").value;
     var jumlah = document.getElementById("dataInputJumlah").value;
     var pilihan = "";
+
+    // Eror Traping 
+    if (dataTerpilih === "") {
+      alert("Pilih salah satu dari pilihan yang tersedia!");
+      return;
+    }
+
     for (var i = 1; i <= jumlah; i++) {
       var inputPilihan = document.getElementById("inputPilihan" + i);
       pilihan += "Pilihan " + i + " : " + inputPilihan.value +  ", ";
@@ -53,6 +72,6 @@ function tampilkanDataTerpilih() {
     var output = "Hallo, Nama saya " + nama + ", saya mempunyai sejumlah " + jumlah + 
     " pilihan, yaitu : " + pilihan + "dan saya memilih " + dataTerpilih;
     
-    document.getElementById("dataTerpilih").innerHTML = output;
+    document.getElementById("hasilTampil").innerHTML = output;
   }
   

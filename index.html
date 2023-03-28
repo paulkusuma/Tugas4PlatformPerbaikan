@@ -23,10 +23,21 @@
 
     <div>
       <div id="InputNama">
-        <h3>Nama :<input type="text" id="dataInputNama" placeholder="masukan nama" /></h3>
+        <h3>
+          Nama :<input
+            type="text"
+            id="dataInputNama"
+            placeholder="masukan nama"
+          />
+        </h3>
       </div>
       <div id="inputJumlah">
-        <h3>Jumlah Pilihan :<input type="number" id="dataInputJumlah" placeholder="jumlah" />
+        <h3>
+          Jumlah Pilihan :<input
+            type="number"
+            id="dataInputJumlah"
+            placeholder="jumlah"
+          />
         </h3>
       </div>
       <button onclick="tampilMasukanJumlahPilihan()">OK</button>
@@ -36,17 +47,17 @@
       <div id="isi"></div>
       <button id="tombolOKPilihan" style="display: none">OK</button>
       <br />
-      <form>
-
-      </form>
+      <form></form>
     </div>
 
     <div>
-      <button id="tampilkanData" onclick="tampilkanDataTerpilih()" style="display: none">OK</button>
-      <p style="text-align: justify;" id="dataTerpilih"></p>
-    
+      <button id="tampilkanData"onclick="tampilkanDataTerpilih()"style="display: none">OK</button>
+
+      <div>
+        <p id="hasilTampil"></p>
+      </div>
     </div>
 
     <script src="script.js"></script>
   </body>
-</html> 
+</html>

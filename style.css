@@ -1,3 +1,80 @@
-.{
-    font-family: arial;
+body {
+
+    background: linear-gradient(to bottom, #4B79A1, #283E51);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.HeaderPaul {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.HeaderPaul #foto img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 0 5px #333;
+}
+
+#InputNama,
+#inputJumlah {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#InputNama input[type="text"],
+#inputJumlah input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  flex: 1;
+}
+
+#inputJumlah input[type="number"] {
+  border: 2px solid #ccc;
+  width: 60px;
+}
+
+form input[type="text"], form input[type="number"], form input[type="radio"] {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 16px;
+  }
+  
+  form input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  form label {
+    font-size: 16px;
+  }
+
+button {
+    background-color: #0095DD;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #008CBA;
+}
+
+#hasilTampil {
+    text-align: center;
+    font-size: 16px;
+    color: black;
 }

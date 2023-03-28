@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Contoh HTML untuk Fungsi JavaScript</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- <style src="style.css"></style> -->
+    <meta name="description" content="Tugas 4 Pemrograman Platform" />
+    <meta name="author" content="PaulKusuma" />
+    <meta name="Nim" content="215314051" />
+    <title>Tugas4Plaform</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <header class="HeaderPaul">
+      <div id="foto">
+        <img src="Foto.jpg" height="100" width="80" />
+      </div>
+      <div>
+        <h3>Paul Wijaya Verda Kusuma</h3>
+      </div>
+      <div>
+        <h4>215314051</h4>
+      </div>
+    </header>
+
+    <div>
+      <div id="InputNama">
+        <h3>Nama :<input type="text" id="dataInputNama" placeholder="masukan nama" /></h3>
+      </div>
+      <div id="inputJumlah">
+        <h3>Jumlah Pilihan :<input type="number" id="dataInputJumlah" placeholder="jumlah" />
+        </h3>
+      </div>
+      <button onclick="tampilMasukanJumlahPilihan()">OK</button>
+    </div>
+
+    <div>
+      <div id="isi"></div>
+      <button id="tombolOKPilihan" style="display: none">OK</button>
+      <br />
+      <form>
+      
+      </form>
+    </div>
+
+    <div>
+      <button id="tampilkanData" onclick="tampilkanDataTerpilih()" style="display: none">OK</button>
+      <p style="text-align: justify;" id="dataTerpilih"></p>
+      <!-- <span id="dataTerpilih"></span> -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tugas 3 Pemrograman Platform" />
+    <meta name="author" content="PaulKusuma" />
+    <meta name="Nim" content="215314051" />
+    <title>Tugas4Platform</title>
+  </head>
+
+  <body>
+    <header class="HeaderPaul">
+      <div id="foto">
+        <img src="Foto.jpg" height="100" width="80" />
+      </div>
+      <div>
+        <h3>Paul Wijaya Verda Kusuma</h3>
+      </div>
+      <div>
+        <h4>215314051</h4>
+      </div>
+    </header>
+
     <div>
       <label for="dataInputJumlah">Masukkan jumlah pilihan:</label>
       <input type="number" id="dataInputJumlah" />
@@ -15,12 +85,12 @@
     <button id="tombolOKPilihan" style="display:none">Simpan</button>
     <br />
     <form>
-      <!-- tambahkan elemen radio button yang sesuai dengan jumlah pilihan yang diinputkan oleh pengguna -->
+     
     </form>
     <div>
         <button id="tampilkanData" onclick="tampilkanDataTerpilih()" style="display:none">OK</button>
         <span id="dataTerpilih"></span>
       </div>
-    <script src="script.js"> </script>
+    <script src="javaScript.js"></script>
   </body>
-</html>
+</html> -->

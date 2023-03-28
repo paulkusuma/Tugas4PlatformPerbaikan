@@ -23,7 +23,7 @@ function tampilMasukanJumlahPilihan() {
   
         var label = document.createElement("label");
         label.for = "radioPilihan" + i;
-        label.textContent = "Pilihan " + i + ": " + inputPilihan.value;
+        label.textContent = "Pilihan " + i + " : " + inputPilihan.value;
         document.querySelector("form").appendChild(radioPilihan);
         document.querySelector("form").appendChild(label);
         document.querySelector("form").appendChild(document.createElement("br"));
@@ -40,7 +40,23 @@ function tampilMasukanJumlahPilihan() {
         break;
       }
     }
-    document.getElementById("dataTerpilih").innerHTML =
-      "Anda memilih: " + dataTerpilih;
+    // var nama=document.getElementById("dataInputNama").value
+    // var jumInput=document.getElementById("dataInputJumlah").value
+    // var dataPilihan = document.getElementById("dataPilihan").innerHTML;
+    // document.getElementById("dataTerpilih").innerHTML =
+    //   "Haloo, nama saya  "+ dataTerpilih;
+
+      var nama = document.getElementById("dataInputNama").value;
+      var jumlah = document.getElementById("dataInputJumlah").value;
+      var pilihan = "";
+      for (var i = 1; i <= jumlah; i++) {
+        var inputPilihan = document.getElementById("inputPilihan" + i);
+        pilihan += "Pilihan " + i + " : " + inputPilihan.value +  ", ";
+      }
+      
+      var output = "Hallo, Nama saya " + nama + ", saya mempunyai sejumlah " + jumlah + 
+      " pilihan, yaitu : " + pilihan + "dan saya memilih " + dataTerpilih;
+      
+      document.getElementById("dataTerpilih").innerHTML = output;
   }
   

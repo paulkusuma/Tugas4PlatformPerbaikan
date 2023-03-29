@@ -25,7 +25,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 #InputNama input[type="text"],
@@ -38,9 +38,14 @@ body {
   flex: 1;
 }
 
+#InputNama input[type="text"] {
+  border: 2px solid #ccc;
+  width: 180px;
+}
+
 #inputJumlah input[type="number"] {
   border: 2px solid #ccc;
-  width: 60px;
+  width: 95px;
 }
 
 form input[type="text"], form input[type="number"], form input[type="radio"] {
@@ -58,6 +63,18 @@ form input[type="text"], form input[type="number"], form input[type="radio"] {
   
   form label {
     font-size: 16px;
+    align-items: center;
+    line-height: 35px;
+  }
+
+  #isi input[type="text"]{
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    flex: 1;
+    margin-bottom: 10px;
   }
 
 button {
@@ -75,6 +92,13 @@ button:hover {
 
 #hasilTampil {
     text-align: center;
-    font-size: 16px;
-    color: black;
+    font-size: 23px;
+    color: white;
+    text-transform: capitalize;
+    float: left;
+}
+
+#hasilTampil:hover{
+  color:#0095DD;
+  transition: .4s;
 }
